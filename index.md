@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+<html>
+  <head>
+    <title>About Me</title>
+  </head>
+  <style>
+    h1{
+      color: lightblue;
+    }
+  </style>
+  <body>
+    
+Hi I’m Stephon Knight Monroe,
 
-You can use the [editor on GitHub](https://github.com/stephon518/About-Me-/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+I grew up in the Bay Area and currently attending code fellows online. Prior to starting code fellows, I attended Year Up Bay Area where I was trained hands-on from skilled developers with professional internships at some of the Bay Area’s top companies. I’m very motivated to complete this program and want to take full advantage of the opportunities this program will provide for me.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My goals that I have is to complete code fellows because I’ve always had a passion for technology and software development. I’m motivated to drive myself forward to complete tasks.
 
-### Markdown
+  </body>
+  <header>
+    <h1style="color: red"</h1style>ABOUT ME</h1>
+  </header>
+  <main>
+    <section>
+      <p color: style="color:lightblue">
+        Where are you from?
+      </p>
+    </section>
+    <footer>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stephon518/About-Me-/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    </footer>
+    <script>
+      var userName = prompt('what is your name');
+      console.log('this is my user name: ' + userName);
+      alert('hi there ' + userName)
+    </script>
+  </main>
+</html>
