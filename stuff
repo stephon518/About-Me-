@@ -1,0 +1,19 @@
+
+// var guest = 0
+// while(guest < 4){
+//   var userAnswer = prompt('Please enter a number between 1 and 20');
+//       console.log('the Guest' + guest);
+//         if(parseInt(userAnswer) === correctAnswer){
+//             alert('DING DING DING.  You got it right. 1 for yes, 2 for no');
+//             break;
+//         } else if(guest === 3 && parseInt(userAnswer) !== correctAnswer){  
+//             alert('times up neo')
+//             break;
+//          } else if (parseInt(userAnswer) < correctAnswer){
+//              guest++  
+//           alert('Incorrect, to low.  Try Again.');
+//             } else {
+//              guest++ 
+//           alert('Incorrect, to high.  Try Again.');
+//             }
+//         }
