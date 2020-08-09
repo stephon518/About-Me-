@@ -2,10 +2,11 @@
 <html>
 <head>
 <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>{background-color: lightblue;}
 
-<h1>About Me, Guessing Game</h1>
+<h1 style=color:black>About Me, Guessing Game</h1>
 <p>Hi I’m Stephon Knight Monroe,
 I grew up in the Bay Area and currently attending code fellows online. Prior to starting code fellows, I attended Year Up Bay Area where I was trained hands-on from skilled developers with professional internships at some of the Bay Area’s top companies. I’m very motivated to complete this program and want to take full advantage of the opportunities this program will provide for me.</p>>
   
