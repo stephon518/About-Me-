@@ -1,70 +1,105 @@
 'use strict';
+var totalCorrect = 0;
+var userName= prompt('Hello! What is your name?');
+alert('Welcome ' + userName + ', you are about to learn all about Stephon Knight.');
+function yesNo(){
+  var happy= prompt('Are you happy?');
+  if (happy.toLowerCase() === 'y' || happy.toLowerCase() === 'yes' ){
+    alert('Correct! You are the happiest!');
+    totalCorrect++;
+  } else if (happy.toLowerCase() === 'n' || happy.toLowerCase() === 'no'){
+    alert('Incorrect! Cheer up ' + userName);
+  }
+  else {
+    alert('Please enter y or n');
+  }
 
-// // function to ensure a valid yes or no response // function verifyResponse(answer) {
-// // function verifyResponse(answer) {
+  var knowIt= prompt('Do you know it?');
+  if (knowIt.toLowerCase() === 'y' || knowIt.toLowerCase() === 'yes'){
+    alert('Correct! You know what\'s up!');
+    totalCorrect++;
+  } else if (knowIt.toLowerCase() === 'n' || knowIt.toLowerCase() === 'no'){
+    alert('Incorrect, you gon learn today ' + userName + ' !');
+  } else {
+    alert('Please enter y or n');
+  }
 
-// // if(answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') 
-// // { return 'yes'; 
-// // } else if (answer.toLowerCase()=== 'no' || answer.toLowerCase() === 'n') { return 'no';
-// //  } else { 
-// //    return 'reprompt'; 
-// //    } 
-// // // }
+  var face= prompt('Does your face surely show it?');
+  if (face.toLowerCase() === 'y' || face.toLowerCase() === 'yes'){
+    alert('Correct! What a face it is!');
+    totalCorrect++;
+  } else if (face.toLowerCase() === 'n' || face.toLowerCase() === 'no'){
+    alert('Incorrect! ' + userName + ' is a sad panda!');
+  } else {
+    alert('Please enter y or n');
+  }
 
-// // // collecting visitor name
-// // // function visitorName() { 
-// //   let visitorName = prompt ('Welcome to my About Me page. What is your Name?'); console.log('Our visitor is named ' + vistorName); 
-// //   return vistorName; 
-// // // }
+  var clap= prompt('Did you clap your hands?');
+  if (clap.toLowerCase() === 'y' || clap.toLowerCase() === 'yes'){
+    alert('Correct! That was loud!');
+    totalCorrect++;
+  } else if (clap.toLowerCase() === 'n' || clap.toLowerCase() === 'no'){
+    alert('Incorrect! ' + userName + ', don\'t tell me you missed!');
+  } else {
+    alert('Please enter y or n');
+  }
 
-// // // guessing game question 1 
-// // // function guessingGame1() { 
-// //   var response1= prompt('Did I grow up in Oakland?'); 
-// //   console.log(visitor + ' responded ' + response1 + ' to question 1'); 
-// //   var guess1 = verifyResponse(response1); 
-// //   while(guess1 === 'reprompt') { 
-// //     response1 = prompt ('please answer with yes or no. Did I grow up in Oakland?);
-// //      guess1 = verifyResponse(response1); 
-// //   } 
-// //     if (guess1 === 'yes') { 
-// //       alert('I am sorry, you are incorrect'); 
-// //     } else if (guess1 === 'no') { 
-// //       alert('You are correct!');
-
-var username = prompt(' whats your name? ')
-alert(' welcome to my page, ' + username)
-
-var cityigrewupin = prompt(' did I grow up in Oakland ')
-if(cityigrewupin.toLowerCase() === 'yes'){
-  alert('yes correct!')
-
-} else {
-  alert('Wrong')
+  var stomp= prompt('Did you stomp your feet?');
+  if (stomp.toLowerCase() === 'y' || stomp.toLowerCase() === 'yes'){
+    alert('Correct! Happy feet!');
+    totalCorrect++;
+  } else if (stomp.toLowerCase() === 'n' || stomp.toLowerCase() === 'no'){
+    alert('Incorrect !' + userName + ' get moving!');
+  } else {
+    alert('Please enter y or n');
+  }
+  alert(userName + ', thank you for being happy and visiting my website!');
 }
-
-
-var username = prompt(' where do i wanna vacation? ')
-alert(' Hawaii ' + username)
-
-var cityigrewupin = prompt(' Do i wanna go to Hawaii ')
-if(cityigrewupin.toLowerCase() === 'yes'){
-  alert('yes correct!')
-
-} else {
-  alert('Wrong')
+yesNo();
+function spicy(){
+  for(var i=0; i < 4; i++){
+    var numSpice = parseInt(prompt('How spicy do I like my food out of 5 start?'));
+    console.log('User chose spice level ' + numSpice);
+    if(numSpice === 4){
+      alert('Correct!');
+      totalCorrect++;
+      break;
+    }else if(numSpice > 4){
+      alert('Too high!');
+    }else if(numSpice < 4){
+      alert('Too low!');
+    }if(i === 3){
+      alert('You\'re out of tries! The correct asnwer is 4!');
+      break;
+    }
+  }
 }
+spicy();
 
+function travel(){
+  var myTravels = ['london', 'hawaii', 'sweden'];
+  var flag = false;
+  for(var j = 0; j < 6; j++){
+    var guess = prompt('Guess a tourist destination I have traveled to.');
+    for(var n = 0; n < myTravels.length; n++){
+      if(guess.toLowerCase() === myTravels[n]){
+        alert('Correct! I have been to ' + myTravels[0] + ', ' + myTravels[1] + ' & ' + myTravels[2]);
+        totalCorrect++;
+        flag = true;
+      }
+    }
+    if(flag===true){
+      break;
+    } else{
+      alert('Nope! I wish!');
+    }
+    if(j === 5){
+      alert('You\'re out of tries! The correct asnwers are ' + myTravels[0] + ', ' + myTravels[1] + ' & ' + myTravels[2]);
+      break;
+    }
 
-var username = prompt(' whats your favorite color ')
-alert(' Black ' + username)
-
-var cityigrewupin = prompt(' Do you wanna go to the store? ')
-if(cityigrewupin.toLowerCase() === 'yes'){
-  alert('Yes')
-
-} else {
-  alert('Fine ill go myself')
+  }
 }
+travel();
 
-
-
+alert('You guessed ' + totalCorrect + '/7 correst answers! Well done!');
