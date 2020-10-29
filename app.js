@@ -2,6 +2,7 @@
 var totalCorrect = 0;
 var userName= prompt('Hello! What is your name?');
 alert('Welcome ' + userName + ', you are about to learn all about Stephon Knight.');
+// this function will ask a question to the user and give back a proper response
 function yesNo(){
   var happy= prompt('Are you happy?');
   if (happy.toLowerCase() === 'y' || happy.toLowerCase() === 'yes' ){
@@ -55,7 +56,10 @@ function yesNo(){
   }
   alert(userName + ', thank you for being happy and visiting my website!');
 }
+//calling the function yesno();
 yesNo();
+
+//this will ask a yes or no question
 function spicy(){
   for(var i=0; i < 4; i++){
     var numSpice = parseInt(prompt('How spicy do I like my food out of 5 start?'));
